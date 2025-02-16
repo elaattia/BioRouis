@@ -68,7 +68,11 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full">
+                <Button 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => navigate("/products")}
+                >
                   Commander
                 </Button>
               </CardContent>
@@ -85,7 +89,11 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full">
+                <Button 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => navigate("/visits")}
+                >
                   Réserver
                 </Button>
               </CardContent>
@@ -102,7 +110,11 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full">
+                <Button 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => navigate("/certifications")}
+                >
                   Voir plus
                 </Button>
               </CardContent>
@@ -118,11 +130,17 @@ const Index = () => {
             Contactez-nous
           </h2>
           <div className="flex justify-center gap-6">
-            <Button className="bg-[#9b87f5] hover:bg-[#8B5CF6]">
+            <Button 
+              className="bg-[#9b87f5] hover:bg-[#8B5CF6]"
+              onClick={() => navigate("/visits")}
+            >
               <House className="mr-2" />
               Nous rendre visite
             </Button>
-            <Button className="bg-[#9b87f5] hover:bg-[#8B5CF6]">
+            <Button 
+              className="bg-[#9b87f5] hover:bg-[#8B5CF6]"
+              onClick={() => navigate("/contact")}
+            >
               <Handshake className="mr-2" />
               Devenir partenaire
             </Button>
